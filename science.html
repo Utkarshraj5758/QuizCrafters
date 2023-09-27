@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Trivia Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fadadd;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #000000
+
+        }
+/* Style for filled text */
+.filled-text {
+    background-color: #fadadd; /* Set the background color (e.g., red) */
+    color: #000080; /* Set the text color (e.g., white) */
+    padding: 5px 10px; /* Add padding for spacing around the text */
+    border-radius: 5px; /* Add rounded corners for a nicer look */
+}
+
+        .quiz-container {
+            background-color: #fadadd;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00ffb3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1bb300;
+        }
+
+        #results {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="filled-text">Science Trivia Quiz</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <ol>
+                <!-- Question 1 -->
+                <li>
+                    <label>What is the chemical symbol for water?</label>
+                    <input type="radio" name="q1" value="a">a) H2O<br>
+                    <input type="radio" name="q1" value="b">b) CO2<br>
+                    <input type="radio" name="q1" value="c">c) O2<br>
+                </li>
+
+                <!-- Question 2 -->
+                <li>
+                    <label>Which gas do plants absorb from the atmosphere?</label>
+                    <input type="radio" name="q2" value="a">a) Nitrogen<br>
+                    <input type="radio" name="q2" value="b">b) Oxygen<br>
+                    <input type="radio" name="q2" value="c">c) Carbon dioxide<br>
+                </li>
+
+                <!-- Add more questions here -->
+                <!-- Question 3, Question 4, ... -->
+
+                <li>
+                    <label>What is the Chemical symbol for gold</label>
+                    <input type="radio" name="q3" value="a">a) Au<br>
+                    <input type="radio" name="q3" value="b">b) Ag<br>
+                    <input type="radio" name="q3" value="c">c) Fe<br>
+                </li>
+                <li>
+                    <label>Which gas is responsible for the Earth's ozone layer depletion?</label>
+                    <input type ="radio" name="q4" value="a">a) oxygen<br>
+                    <input type ="radio" name="q4" value="b">b) Carbon Dioxide<br>
+                    <input type ="radio" name="q4" value="c">c) Chlorofluorocarbons (CFCs)<br>
+                </li>
+                <li>
+                    <label>What is the primary function of the red blood cells in the human body?</label>
+                    <input type = "radio" name="q5" value="a">a) Transporting oxygen<br>
+                    <input type = "radio" name="q5" value="b">b) Fighting infections<br>
+                    <input type = "radio" name="q5" value="c">c) Digesting food<br>
+    
+        
+                </li>
+                <li>
+                    <label>Which of the following statements about electromagnetic waves is true?</label>
+                    <input type = "radio" name="q6" value="a">a)Electromagnetic waves require a medium for propagation<br>
+                    <input type = "radio" name="q6" value="b">b)Electromagnetic waves travel at the speed of light in a vacuum<br>
+                    <input type = "radio" name="q6" value="c">c)Electromagnetic waves have only transverse vibrations<br>
+                
+                </li>
+                <li>
+                    <label>Which of the following phenomena is responsible for the blueness of the sky?</label>
+                    <input type = "radio" name="q7" value="a">a)Refraction<br>
+                    <input type = "radio" name="q7" value="b">b)Diffraction<br>
+                    <input type = "radio" name="q7" value="c">c)Scattering<br>
+
+                </li>
+                <li>
+                    <label>Which particle has the least rest mass?</label>
+                    <input type = "radio" name="q8" value="a">a)Electron<br>
+                    <input type = "radio" name="q8" value="b">b)Photon<br>
+                    <input type = "radio" name="q8" value="c">c)Proton<br>
+                </li>
+                <li>
+                    <label>According to the first law of thermodynamics, what is the relationship between heat (Q), work (W), and internal energy (ΔU) in a system?</label>
+                    <input type = "radio" name="q9" value="a">a)ΔU = Q - W<br>
+                    <input type = "radio" name="q9" value="b">b)ΔU = Q x W<br>
+                    <input type = "radio" name="q9" value="c">c) ΔU = Q + W<br>
+                </li>
+                <li>
+                    <label>What happens to the focal length of a convex lens when it is immersed in water?</label>
+                    <input type="radio" name="q10" value="a">a)Decreases<br>
+                    <input type="radio" name="q10" value="b">b)Increases<br>
+                    <input type="radio" name="q10" value="c">c)Depends on the lens shape<br>
+
+
+                </li>
+
+
+            </ol>
+            <button type="button" onclick="checkAnswers()">Check Answers</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const correctAnswers = ["a", "c","a","c","a","b","c","b","a","b"];
+
+        function checkAnswers() {
+            const quizForm = document.getElementById("quizForm");
+            const resultsContainer = document.getElementById("results");
+            const totalQuestions = 10; // Update this to the total number of questions
+            let score = 0;
+
+            // Check answers for each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const userAnswer = selectedOption.value;
+                    // Compare user's answer with the correct answer (e.g., "a")
+                    if (userAnswer === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the score
+            resultsContainer.innerHTML = `<p>You scored ${score} out of ${totalQuestions}.</p>`;
+        }
+    </script>
+</body>
+</html>
