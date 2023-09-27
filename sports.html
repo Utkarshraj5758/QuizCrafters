@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fadadd;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #000000
+
+        }
+/* Style for filled text */
+.filled-text {
+    background-color: #fadadd; /* Set the background color (e.g., red) */
+    color: #000080; /* Set the text color (e.g., white) */
+    padding: 5px 10px; /* Add padding for spacing around the text */
+    border-radius: 5px; /* Add rounded corners for a nicer look */
+}
+
+        .quiz-container {
+            background-color: #fadadd;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00ffb3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1bb300;
+        }
+
+        #results {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="filled-text">Sports Trivia Quiz</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <ol>
+                <!-- Question 1 -->
+                <li>
+                    <label>FIFA WC 2022 was held in?
+                    </label>
+                    <input type="radio" name="q1" value="a">a) Argentina<br>
+                    <input type="radio" name="q1" value="b">b) Qatar<br>
+                    <input type="radio" name="q1" value="c">c) Saudi Arabia<br>
+                </li>
+
+                <!-- Question 2 -->
+                <li>
+                    <label>Which Male Tennis Player holds the record for most GS?
+                    </label>
+                    <input type="radio" name="q2" value="a">a) Roger Federer<br>
+                    <input type="radio" name="q2" value="b">b) Novak Djokovic<br>
+                    <input type="radio" name="q2" value="c">c) Rafel Nadal<br>
+                </li>
+
+                <!-- Add more questions here -->
+                <!-- Question 3, Question 4, ... -->
+
+                <li>
+                    <label>Which team has clinched their 2nd PKL Title in 2022?</label>
+                    <input type="radio" name="q3" value="a">a) Jaipur Pink Panthers<br>
+                    <input type="radio" name="q3" value="b">b) Patna Pirates<br>
+                    <input type="radio" name="q3" value="c">c) U Mumba<br>
+                </li>
+                <li>
+                    <label>Max Verstappen drives for?
+                    </label>
+                    <input type ="radio" name="q4" value="a">a) Scuderia Ferrari
+                    <br>
+                    <input type ="radio" name="q4" value="b">b) Redbull Racing <br>
+                    <input type ="radio" name="q4" value="c">c) Aston Martin<br>
+                </li>
+                <li>
+                    <label>Which ISL club is competing in AFC Champions League 2023-24?
+                    </label>
+                    <input type = "radio" name="q5" value="a">a) Chennaiyan FC<br>
+                    <input type = "radio" name="q5" value="b">b) Mumbai City FC
+                    <br>
+                    <input type = "radio" name="q5" value="c">c) Mohunbagan Supergiants
+                    <br>
+    
+        
+                </li>
+                <li>
+                    <label>Which is the largest cricket stadium on the planet?</label>
+                    <input type = "radio" name="q6" value="a">a)MCG, Melbourne<br>
+                    <input type = "radio" name="q6" value="b">b)Narendra Modi Stadium, Ahmedabad 
+                    <br>
+                    <input type = "radio" name="q6" value="c">c)Lord's, London<br>
+                
+                </li>
+                <li>
+                    <label> Which English club won their first UCL title recently?
+                    </label>
+                    <input type = "radio" name="q7" value="a">a)Manchester City<br>
+                    <input type = "radio" name="q7" value="b">b)Arsenal<br>
+                    <input type = "radio" name="q7" value="c">c)Manchester united<br>
+
+                </li>
+                <li>
+                    <label>Which of these NBA teams LeBron James hasn't played for?
+                    </label>
+                    <input type = "radio" name="q8" value="a">a)Denver Nuggets<br>
+                    <input type = "radio" name="q8" value="b">b)LA Lakers<br>
+                    <input type = "radio" name="q8" value="c">c)Miami Heat<br>
+                </li>
+                <li>
+                    <label>Who is the only track & field athlete from India to clinch Gold medal in the Olympics?
+                    </label>
+                    <input type = "radio" name="q9" value="a">a)Milkha Singh<br>
+                    <input type = "radio" name="q9" value="b">b)Norman Pritchard
+                    <br>
+                    <input type = "radio" name="q9" value="c">c)Neeraj Chopra 
+                    <br>
+                </li>
+                <li>
+                    <label>Who is the Greatest ever to grace the beautiful game of Football?
+                    </label>
+                    <input type="radio" name="q10" value="a">a)Messi<br>
+                    <input type="radio" name="q10" value="b">b)Messi<br>
+                    <input type="radio" name="q10" value="c">c)Messi<br>
+
+
+                </li>
+
+
+            </ol>
+            <button type="button" onclick="checkAnswers()">Check Answers</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const correctAnswers = ["b", "b","a","b","b","b","a","a","c","c"];
+
+        function checkAnswers() {
+            const quizForm = document.getElementById("quizForm");
+            const resultsContainer = document.getElementById("results");
+            const totalQuestions = 10; // Update this to the total number of questions
+            let score = 0;
+
+            // Check answers for each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const userAnswer = selectedOption.value;
+                    // Compare user's answer with the correct answer (e.g., "a")
+                    if (userAnswer === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the score
+            resultsContainer.innerHTML = `<p>You scored ${score} out of ${totalQuestions}.</p>`;
+        }
+    </script>
+</body>
+</html>
