@@ -1,2 +1,0 @@
-# QuizCrafters
-BNMIT Prodathon
