@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fadadd;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #000000
+
+        }
+/* Style for filled text */
+.filled-text {
+    background-color: #fadadd; /* Set the background color (e.g., red) */
+    color: #000080; /* Set the text color (e.g., white) */
+    padding: 5px 10px; /* Add padding for spacing around the text */
+    border-radius: 5px; /* Add rounded corners for a nicer look */
+}
+
+        .quiz-container {
+            background-color: #fadadd;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00ffb3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1bb300;
+        }
+
+        #results {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="filled-text">History Quiz</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <ol>
+                <!-- Question 1 -->
+                <li>
+                    <label>Who was the first Mughal emperor of India?</label>
+                    <input type="radio" name="q1" value="a">a) Akbar<br>
+                    <input type="radio" name="q1" value="b">b) Babur<br>
+                    <input type="radio" name="q1" value="c">c) Shah Jahan<br>
+                </li>
+
+                <!-- Question 2 -->
+                <li>
+                    <label>The Indus Valley Civilization is also known as the ___________ civilization.</label>
+                    <input type="radio" name="q2" value="a">a) Mesopotamian<br>
+                    <input type="radio" name="q2" value="b">b) Egyptian<br>
+                    <input type="radio" name="q2" value="c">c) Harappan<br>
+                </li>
+
+                <!-- Add more questions here -->
+                <!-- Question 3, Question 4, ... -->
+
+                <li>
+                    <label>Which event is often considered the starting point of the Indian independence movement against British colonial rule?</label>
+                    <input type="radio" name="q3" value="a">a) First War of Independence (1857-1858)<br>
+                    <input type="radio" name="q3" value="b">b) Non-Cooperation Movement (1920-1922)<br>
+                    <input type="radio" name="q3" value="c">c) Quit India Movement (1942)<br>
+                </li>
+                <li>
+                    <label>Who was the leader of the Indian National Congress during India's struggle for independence and became the first Prime Minister of India?</label>
+                    <input type ="radio" name="q4" value="a">a)Subhas Chandra Bose<br>
+                    <input type ="radio" name="q4" value="b">b) Jawaharlal Nehru<br>
+                    <input type ="radio" name="q4" value="c">c) Sardar Patel<br>
+                </li>
+                <li>
+                    <label>The Maurya Empire, one of the largest and most powerful empires in ancient India, was founded by:</label>
+                    <input type = "radio" name="q5" value="a">a) Chandragupta Maurya<br>
+                    <input type = "radio" name="q5" value="b">b) Ashoka the Great<br>
+                    <input type = "radio" name="q5" value="c">c) Harsha<br>
+    
+        
+                </li>
+                <li>
+                    <label>The capital of the Wodeyar dynasty and the princely state of Mysore, which played a significant role in the history of Karnataka, is:</label>
+                    <input type = "radio" name="q6" value="a">a)Bangalore<br>
+                    <input type = "radio" name="q6" value="b">b)Mysore<br>
+                    <input type = "radio" name="q6" value="c">c)Hampi<br>
+                
+                </li>
+                <li>
+                    <label>The famous Vijayanagara Empire, known for its grandeur and architectural marvels, was founded by:</label>
+                    <input type = "radio" name="q7" value="a">a)Krishnadevaraya<br>
+                    <input type = "radio" name="q7" value="b">b)Harihara and Bukka<br>
+                    <input type = "radio" name="q7" value="c">c)Kempe Gowda<br>
+
+                </li>
+                <li>
+                    <label>Which famous historical site in Karnataka is known for its stone-carved temples and monolithic sculptures, including the famous Gommateshwara statue?</label>
+                    <input type = "radio" name="q8" value="a">a)Badami<br>
+                    <input type = "radio" name="q8" value="b">b)Belur<br>
+                    <input type = "radio" name="q8" value="c">c)Shravanabelagola<br>
+                </li>
+                <li>
+                    <label>The Keladi Nayaka Kingdom, an important dynasty in the history of Karnataka, is known for its rulers like Shivappa Nayaka. What is the modern-day name of the region they ruled?</label>
+                    <input type = "radio" name="q9" value="a">a)Kodagu<br>
+                    <input type = "radio" name="q9" value="b">b)Tulu Nadu<br>
+                    <input type = "radio" name="q9" value="c">c)Uttara Kannada<br>
+                </li>
+                <li>
+                    <label>The Unification of Karnataka, which led to the formation of the state of Karnataka in 1956, involved the merging of several regions. Which region was not part of this unification?</label>
+                    <input type="radio" name="q10" value="a">a)Coorg (Kodagu)<br>
+                    <input type="radio" name="q10" value="b">b)Hyderabad-Karnataka<br>
+                    <input type="radio" name="q10" value="c">c)Bombay Presidency<br>
+
+
+                </li>
+
+
+            </ol>
+            <button type="button" onclick="checkAnswers()">Check Answers</button>
+            <a href="correcthis.html">
+                <button type="button">Correct Answers</button>
+            </a>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const correctAnswers = ["b", "c","a","b","a","b","b","c","c","c"];
+
+        function checkAnswers() {
+            const quizForm = document.getElementById("quizForm");
+            const resultsContainer = document.getElementById("results");
+            const totalQuestions = 10; // Update this to the total number of questions
+            let score = 0;
+
+            // Check answers for each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const userAnswer = selectedOption.value;
+                    // Compare user's answer with the correct answer (e.g., "a")
+                    if (userAnswer === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the score
+            resultsContainer.innerHTML = `<p>You scored ${score} out of ${totalQuestions}.</p>`;
+        }
+    </script>
+</body>
+</html>

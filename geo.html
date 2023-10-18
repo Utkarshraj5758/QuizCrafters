@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fadadd;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #000000
+
+        }
+/* Style for filled text */
+.filled-text {
+    background-color: #fadadd; /* Set the background color (e.g., red) */
+    color: #000080; /* Set the text color (e.g., white) */
+    padding: 5px 10px; /* Add padding for spacing around the text */
+    border-radius: 5px; /* Add rounded corners for a nicer look */
+}
+
+        .quiz-container {
+            background-color: #fadadd;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00ffb3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1bb300;
+        }
+
+        #results {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+  
+
+
+        @media (max-width: 768px) {
+            .quiz-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="filled-text">Geography Quiz</h1>
+    <div class="question"></div>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <ol>
+                <!-- Question 1 -->
+                <li>
+                    <label>Which river is the longest in india?</label>
+                    <input type="radio" name="q1" value="a">a) Ganges<br>
+                    <input type="radio" name="q1" value="b">b) Brahmaputra<br>
+                    <input type="radio" name="q1" value="c">c) Yamuna<br>
+                </li>
+
+                <!-- Question 2 -->
+                <li>
+                    <label>The Great Indian Desert, also known as Thar Desert, is located in which Indian state?</label>
+                    <input type="radio" name="q2" value="a">a) Rajasthan<br>
+                    <input type="radio" name="q2" value="b">b) Gujarat<br>
+                    <input type="radio" name="q2" value="c">c) Haryana<br>
+                </li>
+
+                <!-- Add more questions here -->
+                <!-- Question 3, Question 4, ... -->
+
+                <li>
+                    <label>The largest freshwater lake in India, also known for its floating islands, is called:</label>
+                    <input type="radio" name="q3" value="a">a)Chilika Lake<br>
+                    <input type="radio" name="q3" value="b">b)Dal Lake<br>
+                    <input type="radio" name="q3" value="c">c)Loktak Lake<br>
+                </li>
+                <li>
+                    <label>The Great Barrier Reef, one of the world's largest coral reef systems, is located off the coast of which country?</label>
+                    <input type ="radio" name="q4" value="a">a)Australia<br>
+                    <input type ="radio" name="q4" value="b">b) Brazil<br>
+                    <input type ="radio" name="q4" value="c">c) Mexico<br>
+                </li>
+                <li>
+                    <label>Which of the following countries does not have a desert within its borders?</label>
+                    <input type = "radio" name="q5" value="a">a) United States<br>
+                    <input type = "radio" name="q5" value="b">b) Mexico<br>
+                    <input type = "radio" name="q5" value="c">c) Canada<br>
+    
+        
+                </li>
+                <li>
+                    <label>Which of the following is the longest river in the world?</label>
+                    <input type = "radio" name="q6" value="a">a)Nile<br>
+                    <input type = "radio" name="q6" value="b">b)Amazon<br>
+                    <input type = "radio" name="q6" value="c">c)Mississippi<br>
+                
+                </li>
+                <li>
+                    <label>The Western Ghats pass through Karnataka and are known for their rich biodiversity. What is the local name for the Western Ghats in Karnataka?</label>
+                    <input type = "radio" name="q7" value="a">a)Nilgiris<br>
+                    <input type = "radio" name="q7" value="b">b)Sahyadri<br>
+                    <input type = "radio" name="q7" value="c">c)Satpura<br>
+
+                </li>
+                <li>
+                    <label>Which hill station in Karnataka is known for its coffee plantations and is often referred to as the "Scotland of India"?</label>
+                    <input type = "radio" name="q8" value="a">a)Mysore<br>
+                    <input type = "radio" name="q8" value="b">b)Coorg (Kodagu)<br>
+                    <input type = "radio" name="q8" value="c">c)Nandi Hills<br>
+                </li>
+                <li>
+                    <label>The Arabian Sea forms the western boundary of Karnataka. What is the major port city located along the Karnataka coast?</label>
+                    <input type = "radio" name="q9" value="a">a)Udupi<br>
+                    <input type = "radio" name="q9" value="b">b)Karwar<br>
+                    <input type = "radio" name="q9" value="c">c)Mangalore<br>
+                </li>
+                <li>
+                    <label>Which river is the longest in the state of Karnataka?</label>
+                    <input type="radio" name="q10" value="a">a)Kaveri<br>
+                    <input type="radio" name="q10" value="b">b)Krishna<br>
+                    <input type="radio" name="q10" value="c">c)tungabhadra<br>
+
+
+                </li>
+
+
+            </ol>
+            <button type="button" onclick="checkAnswers()">Check Answers</button>
+            <a href="correctgeo.html">
+                <button type="button">Correct Answers</button>
+            </a>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+
+
+
+        const correctAnswers = ["a", "b","c","a","c","a","b","b","c","a"];
+
+        function checkAnswers() {
+            const quizForm = document.getElementById("quizForm");
+            const resultsContainer = document.getElementById("results");
+            const totalQuestions = 10; // Update this to the total number of questions
+            let score = 0;
+
+            // Check answers for each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const userAnswer = selectedOption.value;
+                    // Compare user's answer with the correct answer (e.g., "a")
+                    if (userAnswer === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Display the score
+            resultsContainer.innerHTML = `<p>You scored ${score} out of ${totalQuestions}.</p>`;
+        }
+    </script>
+</body>
+</html>
